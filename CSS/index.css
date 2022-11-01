@@ -13,12 +13,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
 }
 
 .container {
   width: 100vw;
   height: 100vh;
+  background-color: #fcfcfc;
   overflow-x: hidden;
   overflow-wrap: break-word;
 }
@@ -93,7 +93,7 @@ body {
 
 .arrow-button:hover {
   background-color: #ffffff80;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .prev-arrow {
@@ -108,22 +108,23 @@ body {
   position: absolute;
   margin-bottom: 2rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   bottom: 0;
   z-index: 3;
 }
 
 .circle {
-  border: 0.1rem solid #fff;
+  border: 0.2rem solid #fff;
   border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .circle:hover {
   transform: scale(200%);
-  border: 0.2rem solid #1251ff;
+  border: 0.2rem solid #0076fd;
 }
 
 .circle .active {
@@ -204,7 +205,7 @@ body {
   margin-bottom: 2rem;
   font-weight: 500;
   font-size: 1.4rem;
-  color: #1251ff;
+  color: #1e22aa;
   letter-spacing: 0.2rem;
 }
 
@@ -237,8 +238,19 @@ body {
   gap: 2rem;
   padding: 3rem;
   border-radius: 2rem;
-  box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  box-shadow: 0 3rem 6rem 0 rgb(0 0 0 / 10%);
 }
+
+/* .pillar-icon-box .box-1 {
+  z-index: 1;
+}
+.pillar-icon-box .box-2 {
+  z-index: 2;
+}
+.pillar-icon-box .box-3 {
+  z-index: 3;
+} */
 
 .icon-box {
   align-self: flex-start;
@@ -269,13 +281,13 @@ body {
 
 /* PRODUCT SECTION */
 .product-section {
+  max-width: 128rem;
+  padding-bottom: 9.6rem;
+  margin: 0 auto;
 }
 
 .product-box {
   display: flex;
-  max-width: 128rem;
-  margin: 0 auto;
-  padding-bottom: 9.6rem;
 }
 
 .product-box-left {
@@ -297,7 +309,7 @@ body {
 .product-heading-title {
   font-weight: 500;
   font-size: 1.4rem;
-  color: #1251ff;
+  color: #1e22aa;
   letter-spacing: 0.2rem;
   align-self: center;
 }
@@ -332,11 +344,21 @@ body {
   margin-right: 2rem;
 }
 
+.product-img-box {
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1.4rem;
+  overflow: hidden;
+  display: inline-block;
+}
+
 .product-item-img {
   width: 100%;
   height: auto;
-  border-radius: 1rem 1rem 0 0;
-  margin-bottom: 1.4rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.product-item-img:hover {
+  transform: scale(1.1);
 }
 
 .item-top-title {
@@ -348,13 +370,14 @@ body {
 .item-top-price {
   display: flex;
   gap: 0.5rem;
-  color: #1251ff;
-  font-size: 1.6rem;
+  color: #1e22aa;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
 .item-top-price-1 {
   font-weight: 400;
+  color: #1251ff82;
   text-decoration: line-through;
 }
 
@@ -363,18 +386,153 @@ body {
   text-decoration: underline;
 }
 
-.item-bottom {
+.item-bottom:link,
+.item-bottom:visited {
   padding: 1rem;
   margin-top: 1rem;
   margin-right: auto;
   font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
-  background-color: #1251ff;
+  background-color: #1e22aa;
   left: auto;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.item-bottom:hover,
+.item-bottom:active {
+  background-color: #0076fd;
 }
 
 .product-box-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
   width: 20%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+  margin: 1rem;
+  padding: 3.5rem;
+  border-radius: 1rem;
+}
+
+.product-icon {
+  font-size: 5rem;
+  color: #1e22aa;
+}
+
+.product-right-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e22aa;
+  margin-bottom: 0.7rem;
+}
+
+.product-right-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #868686;
+}
+
+.product-link-div {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 3rem;
+  margin-left: 25%;
+}
+
+.product-link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.browse:link,
+.browse:visited {
+  color: #fff;
+  background-color: #1e22aa;
+  transition: all 0.3s;
+}
+
+.browse:hover,
+.browse:active {
+  color: #fff;
+  background-color: #0076fd;
+}
+
+.factories:link,
+.factories:visited {
+  color: #000;
+  background-color: #1251ff1b;
+  transition: all 0.3s;
+  display: block;
+  border: 0.2rem solid #1e22aa;
+}
+
+.factories:hover,
+.factories:active {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* ECOSYSTEM SECTION */
+.ecosystem {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.ecosystem-img {
+  width: 100%;
+  height: auto;
+  padding: 9.6rem 0;
+  margin: 0 auto;
+}
+
+.ecosystem-text-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  width: 40%;
+  margin-left: 5rem;
+  text-align: right;
+}
+
+.ecosystem-text-title {
+  font-size: 4.42rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  margin-bottom: 2rem;
+}
+
+.ecosystem-text-content {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.ecosystem-text-link:link,
+.ecosystem-text-link:visited {
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e22aa;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.ecosystem-text-link:hover,
+.ecosystem-text-link:active {
+  background-color: #0076fd;
 }
