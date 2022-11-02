@@ -23,7 +23,7 @@ body {
   overflow-wrap: break-word;
 }
 
-/* HELPLINE */
+/********************** HELPLINE *********************/
 .helpline {
   background-color: #1e22aa;
   display: flex;
@@ -45,7 +45,7 @@ body {
   gap: 1.2rem;
 }
 
-/* NAV */
+/********************** NAV ****************************/
 .nav-bar {
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ body {
   font-weight: 600;
 }
 
-/* CAROUSEL */
+/******************** CAROUSEL **************************/
 .carousels {
   display: flex;
   justify-content: center;
@@ -186,12 +186,16 @@ body {
   filter: opacity(1) drop-shadow(0 0 0 #061019);
 }
 
-/* PILLARS SECTION */
+/******************** PILLARS SECTION *********************/
 .pillars-section {
   max-width: 128rem;
   margin: 0 auto;
   padding: 9.6rem 0;
+}
+
+.pillars-container {
   display: flex;
+  padding: 1rem;
 }
 
 .pillars-left {
@@ -279,7 +283,7 @@ body {
   margin-top: 0.7rem;
 }
 
-/* PRODUCT SECTION */
+/********************* PRODUCT SECTION ********************/
 .product-section {
   max-width: 128rem;
   padding-bottom: 9.6rem;
@@ -314,9 +318,12 @@ body {
   align-self: center;
 }
 
-.product-box-heading-box hr {
-  width: 80%;
-  height: 0.2rem;
+.product-box-heading-box::after {
+  content: "";
+  display: block;
+  border: 0.05rem solid #dcdcde;
+  border-bottom: 0;
+  flex-grow: 1;
 }
 
 .product-heading-subtitle {
@@ -485,7 +492,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* ECOSYSTEM SECTION */
+/************************ ECOSYSTEM SECTION ********************/
 .ecosystem {
   overflow-x: hidden;
   position: relative;
@@ -535,5 +542,136 @@ body {
 
 .ecosystem-text-link:hover,
 .ecosystem-text-link:active {
+  background-color: #0076fd;
+}
+
+/*************** LATEST PRODUCT SECTION ******************/
+.latest-products {
+  max-width: 128rem;
+  padding-bottom: 9.6rem;
+  margin: 0 auto;
+}
+
+.latest-product-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.latest-product-heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.latest-product-heading {
+  font-size: 3.316rem;
+  font-weight: 700;
+  color: #868686;
+  margin-right: 2.1rem;
+}
+
+.latest-product-heading-box::after {
+  display: block;
+  content: "";
+  /* width: auto;
+  height: 0.1rem; */
+  flex-grow: 1;
+  border: 0.05rem solid #dcdcde;
+  border-top: 0;
+}
+
+.latest-products-box {
+  width: 100%;
+}
+
+.latest-products-col-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+}
+
+.latest-product-col-list {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.latest-product-col-list::after {
+  position: absolute;
+  top: -0.9rem;
+  right: -0.5rem;
+  content: "New!";
+  display: block;
+  color: #fff;
+  background-color: #1e22aa;
+  padding: 1rem 0.4rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.1rem;
+}
+
+.latest-product-img {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+  margin-bottom: 1rem;
+}
+
+.latest-product-top-title {
+  font-size: 1.6rem;
+  color: #1f2937;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.latest-product-prices {
+  display: flex;
+  gap: 0.5rem;
+  color: #1e22aa;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.latest-product-price-1 {
+  font-weight: 400;
+  color: #1251ff82;
+  text-decoration: line-through;
+}
+
+.latest-product-price-2 {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.latest-product-bottom-box:link,
+.latest-product-bottom-box:visited {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1e22aa;
+  left: auto;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.latest-product-bottom-box:hover,
+.latest-product-bottom-box:active {
   background-color: #0076fd;
 }
