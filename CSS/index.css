@@ -195,6 +195,7 @@ body {
 
 .pillars-container {
   display: flex;
+  padding: 1rem;
 }
 
 .pillars-left {
@@ -289,9 +290,10 @@ body {
   margin: 0 auto;
 }
 
-.product-box {
+.product-container {
   display: flex;
   gap: 2rem;
+  padding: 1rem;
 }
 
 .product-box-left {
@@ -553,6 +555,7 @@ body {
 .latest-product-container {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .latest-product-heading-box {
