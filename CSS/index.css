@@ -1021,6 +1021,7 @@ body {
   margin: 0 auto;
   max-width: 131.2rem;
   display: flex;
+  flex-direction: column;
 }
 
 .footer-container-wrapper {
@@ -1028,7 +1029,7 @@ body {
   border-width: 0 0 0.1rem 0;
   border-color: #dcdcde;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   width: 100%;
 }
 
@@ -1076,6 +1077,7 @@ body {
 .description-text {
   margin-bottom: 0.9rem;
   font-size: 1.6rem;
+  color: #868686;
 }
 
 .wrapper-inner-bottom {
@@ -1145,4 +1147,104 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.descriptioin2-list-item:not(:last-child) {
+  padding-bottom: calc(0.7rem / 2);
+  display: flex;
+  font-size: inherit;
+  align-items: center;
+}
+
+.descriptioin2-list-item:not(:first-child) {
+  margin-top: calc(0.7rem / 2);
+  display: flex;
+  font-size: inherit;
+  align-items: center;
+}
+
+.list-item-icon {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: #1e22aa;
+}
+
+.descriptioin2-list-item a:link,
+.descriptioin2-list-item a:visited {
+  display: flex;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #868686;
+  text-decoration: none;
+  transition-duration: 600ms;
+}
+
+.descriptioin2-list-item a:hover,
+.descriptioin2-list-item a:active {
+  color: #1251ff;
+}
+
+.copyright {
+  padding: 2rem 0 2rem 0;
+  width: 100%;
+}
+
+.copyright-container {
+  max-width: 131.2rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+.copyright-container-left {
+  display: flex;
+  width: 70%;
+}
+
+.copyright-left-div {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  align-content: center;
+}
+
+.copyright-div-description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #868686;
+}
+
+.copyright-container-right {
+  width: 30%;
+  display: flex;
+}
+
+.copyright-right-wrapper {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.copyright-wrapper-box {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.copyright-box-icon:link,
+.copyright-box-icon:visited {
+  font-size: 2.5rem;
+  color: #1e22aa;
+  transition-duration: 600ms;
+}
+
+.copyright-box-icon:hover,
+.copyright-box-icon:active {
+  transform: scale(1.6);
+  color: #1251ff;
 }
