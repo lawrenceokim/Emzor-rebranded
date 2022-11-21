@@ -41,7 +41,20 @@ body {
 
 .helpline-right {
   display: flex;
+  align-items: center;
   gap: 1.2rem;
+}
+
+.support-line,
+.support-mail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.helpline-icon {
+  font-size: 1.8rem;
+  display: flex;
 }
 
 /********************** NAV ****************************/
@@ -912,14 +925,18 @@ body {
   max-width: 131.2rem;
   margin: 0 auto;
   overflow: hidden;
+  max-height: 12rem;
 }
 
 .partners-logo-container {
   display: flex;
   gap: 12rem;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .partners-logo {
