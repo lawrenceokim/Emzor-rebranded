@@ -145,4 +145,116 @@
 }
 
 @media (max-width: 56.4375em) {
+  .pillars-right {
+    gap: 2rem;
+  }
+
+  .pillar-icon-box-title span {
+    line-height: 2rem;
+  }
+
+  .product-box-right {
+    gap: 2rem;
+  }
+
+  .product-link-div {
+    margin-top: 1rem;
+  }
+
+  .ecosystem-text-wrapper {
+    width: 50%;
+  }
+
+  .ecosystem-text-title {
+    font-size: 3rem;
+    line-height: 0.4rem;
+  }
+
+  .ecosystem-text-content {
+    margin-bottom: 1rem;
+  }
+
+  .latest-product-top-title {
+    font-size: 1.5rem;
+  }
+
+  .latest-products-col-5 {
+    grid-column-gap: 1.2rem;
+  }
+
+  .summary-box-title {
+    font-size: 2.188rem;
+  }
+
+  .summary-box-1-title {
+    font-size: 1.75rem;
+  }
+
+  .summary-box-1-description {
+    font-size: 1.3rem;
+  }
+
+  .summary-cta-link {
+    font-size: 1.3rem;
+  }
+
+  .box-2-container-2-div {
+    width: 50%;
+    left: 1%;
+  }
+
+  .partners-logo-container {
+    gap: 3.5rem;
+  }
+
+  .signup-container-left {
+    flex-direction: column;
+  }
+
+  .signup-container-left-wrapper {
+    width: 70%;
+  }
+
+  .signup-container-right {
+    width: 30%;
+  }
+
+  .signup-title-box {
+    width: 100%;
+  }
+
+  .cta-form-container {
+    width: 100%;
+  }
+
+  .signup-title-box {
+    padding-left: 1.5rem;
+  }
+
+  .footer-container-wrapper-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .wrapper-wrapper-1 {
+    width: 100%;
+  }
+
+  .inner-logo-img {
+    width: 50%;
+  }
+
+  .wrapper-wrapper-2 {
+    width: 30%;
+  }
+
+  .wrapper-wrapper-3 {
+    width: 30%;
+  }
+
+  .wrapper-wrapper-4 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 49.375em) {
 } ;
