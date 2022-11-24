@@ -1,0 +1,49 @@
+/************** 1080px  ***********************/
+@media (max-width: 67.5em) {
+  .helpline-wrapper,
+  .nav-bar-container,
+  .pillars-container,
+  .product-section,
+  .latest-products,
+  .summary-container,
+  .partners-container,
+  .signup-container,
+  .footer-container {
+    max-width: 100rem;
+  }
+
+  .pillars-left {
+    padding: 0;
+  }
+
+  .pillar-icon-box-title span {
+    font-size: 2rem;
+  }
+
+  .summary-box-1-title {
+    font-size: 2rem;
+  }
+
+  .container-box-2-div {
+    top: 2.2rem;
+    width: 60%;
+  }
+
+  .summary-box-1-title {
+    margin-bottom: 1rem;
+  }
+
+  .summary-box-1-img {
+    right: -11rem;
+    bottom: -12rem;
+  }
+
+  .summary-box-2-img {
+    right: 19rem;
+    bottom: -9rem;
+  }
+
+  .signup-title {
+    font-size: 2rem;
+  }
+} ;

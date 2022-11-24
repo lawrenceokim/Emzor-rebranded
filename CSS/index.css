@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Open sans", sans-serif;
   background-color: #f9f9f9;
-  overflow-x: hidden;
+  overflow-x: hidden; /*Hide vertical scrollbar*/
   overflow-wrap: break-word;
   height: 100vh;
   width: 100vw;
@@ -206,7 +206,7 @@ body {
   color: #fff;
   font-size: 3rem;
   padding: 2rem;
-  background-color: #868686;
+  background-color: #86868635;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -742,6 +742,7 @@ body {
   display: flex;
   gap: 2rem;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .summary-box {
@@ -927,9 +928,10 @@ body {
 
 .container-2-img {
   position: absolute;
-  width: 40%;
-  height: auto;
-  right: 4rem;
+  width: 45%;
+  height: 100%;
+  right: 1rem;
+  bottom: 0;
 }
 
 /*************** PARTNER'S LOGO **********************/
@@ -953,7 +955,7 @@ body {
   gap: 12rem;
   margin-right: auto;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -981,19 +983,20 @@ body {
 }
 .signup-container-left-wrapper {
   width: 83%;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
 .signup-container-left {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 
 .signup-title-box {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   width: 60%;
 }
 
@@ -1013,37 +1016,66 @@ body {
 
 .cta-form {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  /* flex-direction: column; */
+  /* gap: 1rem; */
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem;
+
+  margin-left: calc(-1rem / 2);
+  margin-right: calc(-1rem / 2);
+  margin-bottom: -1rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .cta-form-top {
   display: flex;
-}
-.cta-form-text {
-  padding: 1.5rem 1rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  border: 0.1rem solid #868686;
+  width: 100%;
 }
 
-.cta-form-text:last-child {
-  margin-left: auto;
+.cta-form-name,
+.cta-form-email {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: calc(1rem / 2);
+  margin-right: calc(1rem / 2);
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.cta-form-text {
+  color: #1f2937;
+  background-color: #fff;
+  min-height: 4.7rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.6rem;
+  font-weight: 400;
+  border: 0.1rem solid #dcdcdc;
+  width: 100%;
+  max-width: 100%;
+}
+
+.button-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: calc(1rem / 2);
+  margin-right: calc(1rem / 2);
+  margin-bottom: 1rem;
 }
 
 .cta-form-button {
-  padding: 2rem 1.6rem;
-  width: 100%;
-  border-radius: 0.5rem;
-  border-style: none;
-  background-color: #1e22aa;
+  flex-basis: 100%;
+  min-height: 4.7rem;
   color: #fff;
-  transition-duration: 600ms;
+  background-color: #1e22aa;
+  border-width: 0;
+  border-color: #040404;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
 }
 
 .cta-form-button:hover {
@@ -1064,7 +1096,7 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
-  margin: -6rem 0 0 0;
+  margin: -4rem 0 0 0;
   padding: 0;
 }
 
@@ -1085,6 +1117,7 @@ body {
   max-width: 131.2rem;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .footer-container-wrapper {
@@ -1179,6 +1212,16 @@ body {
 
 .wrapper-wrapper-2 {
   width: 20%;
+  display: flex;
+}
+
+.wrapper-wrapper-3 {
+  width: 20%;
+  display: flex;
+}
+
+.wrapper-wrapper-4 {
+  width: 30%;
   display: flex;
 }
 
