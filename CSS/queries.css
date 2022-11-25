@@ -257,4 +257,288 @@
 }
 
 @media (max-width: 49.375em) {
+  .nav-right {
+    display: none;
+  }
+
+  .pillars-container {
+    flex-direction: column;
+  }
+
+  .pillars-left {
+    align-items: center;
+    width: 100%;
+  }
+
+  .pillar-heading-big {
+    font-size: 2.6rem;
+  }
+
+  .pillars-right {
+    width: 100%;
+  }
+
+  .pillar-icon-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-box {
+    align-self: center;
+  }
+
+  .pillar-icon {
+    font-size: 4.2rem;
+  }
+
+  .pillar-icon-box-title {
+    align-self: center;
+  }
+
+  .products-item {
+    gap: 1rem;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .product-box-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-img-box {
+    margin-bottom: 0;
+  }
+
+  .product-box-right {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .product-right-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .ecosystem-img {
+    padding-top: 3rem;
+  }
+
+  .latest-products-col-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .latest-product-bottom-box:link,
+  .latest-product-bottom-box:visited {
+    margin-top: 0;
+  }
+
+  .summary-container {
+    flex-direction: column;
+  }
+
+  .container-box-1-div,
+  .container-box-2-div,
+  .box-2-container-2-div {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .summary-box {
+    width: 100%;
+  }
+
+  .summary-box-1 {
+    padding: 6rem;
+  }
+
+  .summary-box-2 {
+    width: 100%;
+  }
+
+  .summary-box-1-img,
+  .summary-box-2-img,
+  .container-2-img {
+    position: inherit;
+    width: 30%;
+  }
+
+  .summary-box-1-img {
+    right: -42rem;
+    bottom: 0;
+  }
+
+  .summary-box-2-img {
+    right: -2rem;
+    bottom: 0;
+  }
+
+  .container-2-img {
+    right: -40rem;
+    bottom: 0;
+  }
+
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-container-left-wrapper {
+    width: 100%;
+  }
+
+  .cta-form-top {
+    flex-wrap: wrap;
+  }
+
+  .cta-form-name,
+  .cta-form-email {
+    width: 100%;
+  }
+
+  .signup-container-right {
+    width: 100%;
+  }
+
+  .signup-right-box {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .signup-right-img {
+    width: 60%;
+  }
+
+  .footer {
+    padding-top: 2rem;
+  }
+
+  .wrapper-wrapper-2 {
+    width: 50%;
+  }
+  .wrapper-wrapper-3 {
+    width: 50%;
+  }
+  .wrapper-wrapper-4 {
+    width: 100%;
+  }
+
+  .copyright-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .copyright-container-left,
+  .copyright-container-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .copyright-wrapper-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 45.9375em) {
+  .helpline-wrapper,
+  .nav-bar-container,
+  .pillars-container,
+  .product-section,
+  .latest-products,
+  .summary-container,
+  .partners-container,
+  .signup-container,
+  .footer-container {
+    max-width: 70rem;
+  }
+  .helpline-wrapper {
+    font-size: 1rem;
+  }
+  .slide-text h6 {
+    font-size: 1.3rem;
+  }
+
+  .slide-text h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .product-link-div {
+    justify-content: center;
+    margin-left: 0;
+    gap: 5rem;
+  }
+  .ecosystem-text-wrapper {
+    margin-left: 0;
+  }
+  .ecosystem-text-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .ecosystem-text-content {
+    font-size: 1.4rem;
+  }
+  .ecosystem-text-link:link,
+  .ecosystem-text-link:visited {
+    padding: 1rem 3rem;
+  }
+  .summary-box-1-img {
+    right: -37rem;
+  }
+
+  .container-2-img {
+    right: -37rem;
+  }
+}
+
+@media (max-width: 36.25em) {
+  .helpline-wrapper,
+  .nav-bar-container,
+  .pillars-container,
+  .product-section,
+  .latest-products,
+  .summary-container,
+  .partners-container,
+  .signup-container,
+  .footer-container {
+    max-width: 55rem;
+  }
+  .discount-text {
+    display: none;
+  }
+  .product-heading-subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .ecosystem-text-title {
+    font-size: 2rem;
+  }
+  .ecosystem-text-content {
+    font-size: 1.2rem;
+  }
+  .ecosystem-text-link:link,
+  .ecosystem-text-link:visited {
+    padding: 0.5rem 1.5rem;
+  }
+  .box-2-container-2-div {
+    width: 55%;
+  }
+  .summary-box-1-img {
+    right: -32rem;
+  }
+  .summary-box-1-title {
+    font-size: 1.6rem;
+  }
+  .summary-cta-link:link,
+  .summary-cta-link:visited {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+  }
+  .partners-logo-container {
+    gap: 2.5rem;
+  }
 } ;
