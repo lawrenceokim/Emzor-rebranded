@@ -227,7 +227,7 @@ body {
 }
 
 .next-btn {
-  margin-right: 1.7rem;
+  margin-right: 0;
 }
 
 .navigation-dots {
@@ -961,7 +961,7 @@ body {
   align-items: center;
   /* justify-content: center; */
   padding: 1rem;
-  width: 100%;
+  width: 10%;
   height: 100%;
 }
 
