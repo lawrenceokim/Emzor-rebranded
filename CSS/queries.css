@@ -768,7 +768,11 @@
   }
 
   .slide-text {
-    width: 84%;
+    width: 90%;
+  }
+
+  .navigation {
+    display: none;
   }
 
   .summary-box-1 {
@@ -805,7 +809,7 @@
   }
 
   .slide-text {
-    width: 82%;
+    width: 99%;
   }
 
   .pillar-icon-box {
@@ -849,7 +853,7 @@
     font-size: 1.2rem;
   }
   .product-link {
-    padding: 0.9rem 1.5rem;
+    padding: 0.9rem 1.9rem;
   }
 
   .ecosystem-text-title {
