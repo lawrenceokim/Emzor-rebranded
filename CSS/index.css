@@ -100,10 +100,6 @@ body {
   gap: 2rem;
 }
 
-.nav-right-hamburger {
-  display: none;
-}
-
 .nav-items:link,
 .nav-items:visited {
   font-size: 1.6rem;

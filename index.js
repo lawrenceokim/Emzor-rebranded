@@ -6,14 +6,6 @@ const dots = document.querySelectorAll(".dot");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
-// nav menu
-const headerEl = document.querySelector(".nav-bar-container");
-const btnNavEl = document
-  .querySelector(".btn-mobile-nav")
-  .addEventListener("click", function () {
-    headerEl.classList.toggle("nav-open");
-  });
-
 // image slider next button
 nextArrow.addEventListener("click", () => {
   slides.forEach((slide) => {
@@ -88,24 +80,6 @@ slider.addEventListener("mouseout", () => {
   autoSlider();
 });
 
-/**making sticky navigation */
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    // console.log(ent);
-
-    if (!ent.isIntersecting) {
-      document.body.classList.add("sticky");
-    } else document.body.classList.remove("sticky");
-  },
-  {
-    root: null /*should observe inside the viewport*/,
-    threshold: 0,
-    // rootMargin: "-60px",
-  }
-);
-obs.observe(slider);
-
 //================== SMOOTH SCROLLING IN SAFARI ==================//
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
@@ -133,3 +107,29 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+// nav menu
+const headerEl = document.querySelector(".nav-bar-container");
+const btnNavEl = document
+  .querySelector(".btn-mobile-nav")
+  .addEventListener("click", function () {
+    headerEl.classList.toggle("nav-open");
+  });
+
+/**making sticky navigation */
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    // console.log(ent);
+
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else document.body.classList.remove("sticky");
+  },
+  {
+    root: null /*should observe inside the viewport*/,
+    threshold: 0,
+    // rootMargin: "-60px",
+  }
+);
+obs.observe(slider);
