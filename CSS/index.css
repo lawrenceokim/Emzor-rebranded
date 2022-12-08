@@ -78,6 +78,7 @@ body {
   color: #1f2937;
   transition-duration: 600ms;
   padding: 0 1rem 0 1rem;
+  position: relative;
 }
 
 .nav-bar-logo-wrapper {
@@ -135,6 +136,30 @@ body {
   margin-top: 6rem;
 }
 
+/*MOBILE NAV*/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  margin-right: 1rem;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="menu-outline"] {
+  /*selecting an element with the name property. the [] is what is used for that. */
+  display: block;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  /*selecting an element with the name property. the [] is what is used for that. */
+  display: none;
+}
 /******************** CAROUSEL **************************/
 .slider {
   position: relative;

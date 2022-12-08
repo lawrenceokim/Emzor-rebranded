@@ -277,15 +277,65 @@
     width: 18%;
   }
 
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1001;
+  }
+  .nav-right {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+
+    transition: all 0.5s ease-in;
+    /* HIDE NAVIGATION */
+    /*setting display to none won't allow transitioning at all instead we use opacity set to 0*/
+
+    /*Steps to really hiding the navigation*/
+    /*1) Hide it visually*/
+    opacity: 0;
+
+    /*2) Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /*3) Hide it from screen readers*/
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  .nav-open .nav-right {
+    /* making navigation accessible again*/
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    /*selecting an element with the name property. the [] is what is used for that. */
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    /*selecting an element with the name property. the [] is what is used for that. */
+    display: none;
+  }
+
   .sticky .nav-bar {
     height: 6.039rem;
   }
 
   .sticky .pillars-section {
     margin-top: 6.039rem;
-  }
-  .nav-right {
-    display: none;
   }
 
   .pillars-container {

@@ -6,6 +6,14 @@ const dots = document.querySelectorAll(".dot");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
+// nav menu
+const headerEl = document.querySelector(".nav-bar-container");
+const btnNavEl = document
+  .querySelector(".btn-mobile-nav")
+  .addEventListener("click", function () {
+    headerEl.classList.toggle("nav-open");
+  });
+
 // image slider next button
 nextArrow.addEventListener("click", () => {
   slides.forEach((slide) => {
@@ -97,3 +105,31 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(slider);
+
+//================== SMOOTH SCROLLING IN SAFARI ==================//
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // now selecting the target attribute of the link buttons
+    const href = link.getAttribute("href");
+
+    //scrolling back to top of page.
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    //smooth scrolling into other links
+    if (href !== "#" && href.startsWith("#")) {
+      const section = document.querySelector(href);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //closing mobile navigation
+    if (link.classList.contains("nav-items"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
