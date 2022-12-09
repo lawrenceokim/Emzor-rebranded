@@ -279,7 +279,7 @@
     background-color: #fff;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 25%;
     height: 100vh;
     flex-direction: column;
     gap: 2.5rem;
@@ -577,6 +577,10 @@
     display: none;
   }
 
+  .nav-right {
+    width: 30%;
+  }
+
   .pillar-heading-big {
     text-align: center;
   }
@@ -838,6 +842,10 @@
   .signup-container,
   .footer-container {
     max-width: 34rem;
+  }
+
+  .nav-right {
+    width: 35%;
   }
 
   .slide-text {
