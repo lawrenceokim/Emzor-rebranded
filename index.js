@@ -124,12 +124,12 @@ const obs = new IntersectionObserver(
 
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
-    } else document.body.classList.remove("sticky");
+    } else if (ent.isIntersecting) document.body.classList.remove("sticky");
   },
   {
-    root: null /*should observe inside the viewport*/,
+    root: null,
     threshold: 0,
-    // rootMargin: "-60px",
+    rootMargin: "-60px",
   }
 );
 obs.observe(slider);

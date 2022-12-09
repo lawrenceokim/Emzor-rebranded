@@ -119,11 +119,11 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
   height: 6rem;
   width: 100%;
   z-index: 30;
+  padding-top: 0;
+  padding-bottom: 0;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
   transition: 600ms all ease-in;
 }
@@ -282,8 +282,8 @@ body {
 
 /******************** PILLARS SECTION *********************/
 .pillars-section {
+  padding-top: 3rem;
   padding-bottom: 9.6rem;
-  padding-top: 7rem;
 }
 
 .pillars-container {
