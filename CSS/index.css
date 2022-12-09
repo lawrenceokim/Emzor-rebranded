@@ -59,11 +59,11 @@ body {
 
 /********************** NAV ****************************/
 .nav-bar {
+  position: relative;
   display: flex;
   align-items: center;
   transition-duration: 600ms;
   background-color: #fff;
-  height: 6rem;
   width: 100%;
 }
 
@@ -78,7 +78,6 @@ body {
   color: #1f2937;
   transition-duration: 600ms;
   padding: 0 1rem 0 1rem;
-  position: relative;
 }
 
 .nav-bar-logo-wrapper {
@@ -283,7 +282,7 @@ body {
 
 /******************** PILLARS SECTION *********************/
 .pillars-section {
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 9.6rem;
 }
 
