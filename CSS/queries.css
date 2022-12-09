@@ -326,6 +326,10 @@
     display: none;
   }
 
+  .navigation {
+    display: none;
+  }
+
   .pillars-container {
     flex-direction: column;
   }
@@ -846,6 +850,11 @@
 
   .nav-right {
     width: 39%;
+  }
+
+  .nav-items:link,
+  .nav-items:visited {
+    letter-spacing: 0.001rem;
   }
 
   .slide-text {
