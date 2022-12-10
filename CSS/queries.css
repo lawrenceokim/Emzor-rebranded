@@ -270,6 +270,11 @@
 }
 
 @media (max-width: 49.375em) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .nav-bar-logo-wrapper {
     width: 18%;
   }

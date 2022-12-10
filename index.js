@@ -3,6 +3,7 @@ const nextArrow = document.querySelector(".next-btn");
 const slides = document.querySelectorAll(".slide");
 const slider = document.querySelector(".slider");
 const dots = document.querySelectorAll(".dot");
+const navRight = document.querySelector(".nav-right");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
