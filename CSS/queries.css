@@ -289,7 +289,7 @@
     top: 0;
     right: 0;
     width: 25%;
-    height: 100vh;
+    height: 65vh;
     flex-direction: column;
     gap: 2.5rem;
     align-items: flex-start;
@@ -570,6 +570,10 @@
   .container-2-img {
     right: -37rem;
   }
+
+  .signup-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 36.25em) {
@@ -778,13 +782,13 @@
   }
   .box-2-container-2-div {
     left: 0.5%;
-    width: 75%;
+    width: 60%;
   }
   .summary-box-2-img {
     right: 7rem;
   }
   .container-2-img {
-    right: -33rem;
+    right: -27.5rem;
   }
 
   .partners-logo-container {
@@ -815,6 +819,10 @@
     max-width: 38rem;
   }
 
+  .nav-right {
+    height: 60vh;
+  }
+
   .slider {
     height: 60%;
   }
@@ -840,8 +848,12 @@
   .summary-box-2-img {
     right: 6rem;
   }
+
+  .box-2-container-2-div {
+    width: 65%;
+  }
   .container-2-img {
-    right: -28rem;
+    right: -24.2rem;
   }
 
   .inner-title-div-title {
@@ -940,10 +952,71 @@
     right: 5.5rem;
   }
   .container-2-img {
-    right: -25rem;
+    right: -23rem;
   }
 
   .description-text {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .nav-right {
+    width: 35%;
+    height: 79vh;
+  }
+
+  .slide-text h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .slide-text h1 {
+    font-size: 2.4rem;
+  }
+  .dot {
+    width: 2rem;
+  }
+
+  .pillar-heading-big {
+    font-size: 1.8rem;
+  }
+
+  .ecosystem-text-wrapper {
+    width: 60%;
+  }
+  .ecosystem-text-link:link,
+  .ecosystem-text-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .latest-product-col-list::after {
+    font-size: 1.1rem;
+  }
+  .latest-product-top-title,
+  .latest-product-prices {
+    font-size: 1.2rem;
+  }
+  .latest-product-bottom-box:link,
+  .latest-product-bottom-box:visited {
+    padding: 0.5rem;
+  }
+
+  .box-2-container-2-div {
+    width: 70%;
+  }
+  .container-2-img {
+    right: -21.7rem;
+  }
+
+  .signup-title {
+    font-size: 1.6rem;
+  }
+  .cta-form-text {
+    font-size: 1.4rem;
+  }
+
+  .copyright-box-icon:link,
+  .copyright-box-icon:visited {
+    font-size: 2rem;
   }
 } ;
